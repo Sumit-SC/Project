@@ -22,7 +22,7 @@ Follow these steps to get the AI Governance Workbench running on your local mach
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/Sumit-SC/Project.git](https://github.com/Sumit-SC/Project.git)
+    git clone https://github.com/Sumit-SC/Project.git
     cd Project
     ```
 
