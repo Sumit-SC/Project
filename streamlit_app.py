@@ -54,7 +54,7 @@ except Exception as e:
     st.error(f"Could not initialize Gemini API. Error: {e}")
     st.stop()
 
---- Optional: Configure Mapbox token for Plotly density maps (for richer map tiles) ---
+# --- Optional: Configure Mapbox token for Plotly density maps (for richer map tiles) ---
 You can get a free token from mapbox.com if desired.
 try:
     px.set_mapbox_access_token(st.secrets["MAPBOX_TOKEN"])
