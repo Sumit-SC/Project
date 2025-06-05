@@ -22,10 +22,9 @@ Follow these steps to get the AI Governance Workbench running on your local mach
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/your-username/AI-Governance-Workbench.git](https://github.com/your-username/AI-Governance-Workbench.git)
-    cd AI-Governance-Workbench
+    git clone [https://github.com/Sumit-SC/Project.git](https://github.com/Sumit-SC/Project.git)
+    cd Project
     ```
-    (Replace `your-username` with your actual GitHub username or the repository's path.)
 
 2.  **Create a Virtual Environment (Recommended):**
     ```bash
@@ -46,7 +45,7 @@ Follow these steps to get the AI Governance Workbench running on your local mach
     ```bash
     pip install -r requirements.txt
     ```
-    *(If `requirements.txt` is not provided, you'll need to install the dependencies manually. Key ones include `streamlit`, `pandas`, `PyPDF2`, `python-docx`, `google-generativeai`, `plotly`, `numpy`, `faiss-cpu` (or `faiss-gpu`), `wordcloud`, `matplotlib`.)*
+    *(If `requirements.txt` is not provided, you'll need to install the dependencies manually. Key ones include `streamlit`, `pandas`, `PyPDF2`, `python-docx`, `google-generativeai`, `plotly`, `numpy`, `faiss-cpu` (or `faiss-gpu`), `wordcloud`, `matplotlib`, `openpxl`.)*
 
 5.  **Configure Google Gemini API Key:**
     * Create a `.streamlit` folder in the root of your project directory if it doesn't exist.
@@ -79,9 +78,8 @@ You can easily deploy this application to [Streamlit Community Cloud](https://st
 
 Alternatively, use this direct deployment link:
 
-[![Deploy to Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/your-github-username/AI-Governance-Workbench/main/app.py)
+[![Deploy to Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/Sumit-SC/Project/main/streamlit_app.py)
 
-*(Replace `your-github-username` and `AI-Governance-Workbench/main/app.py` with your actual repository details after forking.)*
 
 ## 📚 Usage Guide
 
