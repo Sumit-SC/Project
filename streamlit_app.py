@@ -26,6 +26,17 @@ st.set_page_config(
 st.title("AI Governance Workbench")
 st.subheader("Developed by Sumit")
 
+# Hide GitHub/Fork buttons and other Streamlit header items
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}   /* Hide the hamburger menu */
+    footer {visibility: hidden;}      /* Hide footer */
+    header {visibility: hidden;}      /* Hide the header (includes GitHub and Fork buttons) */
+    </style>
+"""
+
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 # --- Configure Google Gemini API Key securely ---
 gemini_model = None # Initialize to None
 embedding_model = None # Initialize embedding model
@@ -43,14 +54,14 @@ except Exception as e:
     st.error(f"Could not initialize Gemini API. Error: {e}")
     st.stop()
 
-# --- Optional: Configure Mapbox token for Plotly density maps (for richer map tiles) ---
-# You can get a free token from mapbox.com if desired.
-# try:
-#     px.set_mapbox_access_token(st.secrets["MAPBOX_TOKEN"])
-# except KeyError:
-#     st.warning("Mapbox token not found in secrets. Mapbox-powered maps may have limited detail.")
-# except Exception as e:
-#     st.warning(f"Could not set Mapbox access token: {e}")
+--- Optional: Configure Mapbox token for Plotly density maps (for richer map tiles) ---
+You can get a free token from mapbox.com if desired.
+try:
+    px.set_mapbox_access_token(st.secrets["MAPBOX_TOKEN"])
+except KeyError:
+    st.warning("Mapbox token not found in secrets. Mapbox-powered maps may have limited detail.")
+except Exception as e:
+    st.warning(f"Could not set Mapbox access token: {e}")
 
 
 # --- Dummy Data for Summarizer (for quick demo) ---
