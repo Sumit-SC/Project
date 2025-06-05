@@ -37,6 +37,14 @@ hide_streamlit_style = """
 
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
+# Hide the Streamlit header that contains app name and GitHub/project link
+hide_header_style = """
+    <style>
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_header_style, unsafe_allow_html=True)
+
 # --- Configure Google Gemini API Key securely ---
 gemini_model = None # Initialize to None
 embedding_model = None # Initialize embedding model
